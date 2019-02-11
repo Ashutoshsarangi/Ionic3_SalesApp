@@ -1,0 +1,31 @@
+page-stock-detail {
+    .lineColor{
+        background-color: aqua;
+    }
+    .tableStyle{
+        text-align: center;
+        display: grid;
+        // display: flex;
+        // justify-content: center;
+    }
+    tr:nth-child(even){
+        background-color: #caccd2
+    }
+    tr:nth-child(odd){
+        background-color: white
+    }
+    table{
+        border: 1px solid #123456
+    }
+    th{
+        color: #488aff
+    }
+    .centerBtn{
+        display: flex;
+        justify-content: center;
+    }
+    .iconRight{
+        position: absolute;
+        right: 5px;
+    }
+}

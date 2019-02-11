@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar hideBackButton>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card style="width: 100%;margin: 0px;">
+    <ion-card-header>
+      Header
+    </ion-card-header>
+    <ion-card-content>
+      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+    </ion-card-content>
+  </ion-card>
+  <br>
+  <ion-card style="width: 100%;margin: 0px;">
+    <ion-card-header>
+      Sales Performance
+    </ion-card-header>
+    <ion-card-content>
+        <div padding>
+            <ion-segment [(ngModel)]="pet">
+              <ion-segment-button value="kittens">
+                Kittens
+              </ion-segment-button>
+              <ion-segment-button value="puppies">
+                Puppies
+              </ion-segment-button>
+            </ion-segment>
+          </div>
+          
+          <div [ngSwitch]="pet">
+            <ion-list *ngSwitchCase="'puppies'">
+              <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="img/thumbnail-puppy-1.jpg">
+                </ion-thumbnail>
+                <h2>Ruby</h2>
+              </ion-item>
+              ...
+            </ion-list>
+          
+            <ion-list *ngSwitchCase="'kittens'">
+              <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="img/thumbnail-kitten-1.jpg">
+                </ion-thumbnail>
+                <h2>Luna</h2>
+              </ion-item>
+              ...
+            </ion-list>
+          </div>
+      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

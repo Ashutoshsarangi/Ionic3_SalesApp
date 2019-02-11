@@ -1,0 +1,15 @@
+page-action-modal {
+    .iconRight{
+        position: absolute;
+        right: 5px;
+    }
+    .outline-CD{
+        border: 1px solid;
+    }
+    .outline-CD:active{
+        background-color: olive;
+    }
+    .outline-CD:focus{
+        background-color: olive;
+    }
+}

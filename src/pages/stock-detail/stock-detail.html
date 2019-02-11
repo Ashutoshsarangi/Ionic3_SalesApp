@@ -1,0 +1,118 @@
+<!--
+  Generated template for the StockDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>stockDetail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div style="background-color: #f4f5f7;">
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="kittens">
+        Kittens
+      </ion-segment-button>
+      <ion-segment-button value="puppies">
+        Puppies
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'puppies'">
+        <ion-card>
+          <ion-card-content>
+              <ion-item>
+                <ion-label>Gaming</ion-label>
+                <ion-select [(ngModel)]="gaming">
+                  <ion-option value="nes">NES</ion-option>
+                  <ion-option value="n64">Nintendo64</ion-option>
+                  <ion-option value="ps">PlayStation</ion-option>
+                  <ion-option value="genesis">Sega Genesis</ion-option>
+                  <ion-option value="saturn">Sega Saturn</ion-option>
+                  <ion-option value="snes">SNES</ion-option>
+                </ion-select>
+            </ion-item>
+            <hr class="lineColor">
+            <ion-item>
+              <ion-label>Gaming</ion-label>
+                <ion-select [(ngModel)]="gaming2">
+                  <ion-option value="nes">NES</ion-option>
+                  <ion-option value="n64">Nintendo64</ion-option>
+                  <ion-option value="ps">PlayStation</ion-option>
+                  <ion-option value="genesis">Sega Genesis</ion-option>
+                  <ion-option value="saturn">Sega Saturn</ion-option>
+                  <ion-option value="snes">SNES</ion-option>
+                </ion-select>
+              </ion-item>
+          </ion-card-content>
+        </ion-card>
+        <ion-card>
+            <ion-card-content >
+              <div class="tableStyle">
+                  <table >
+                      <tr>
+                        <th>dsagdasg</th>
+                        <th>dsagdasg</th>
+                      </tr>
+                      <tr>
+                        <td>das</td>
+                        <td>das</td>
+                      </tr>
+                      <tr>
+                        <td>das</td>
+                        <td>das</td>
+                      </tr>
+                      <tr>
+                        <td>das</td>
+                        <td>das</td>
+                      </tr>
+                      <tr>
+                        <td>das</td>
+                        <td>das</td>
+                      </tr>
+                      <tr>
+                        <td>das</td>
+                        <td>das</td>
+                      </tr>
+                    </table>
+              </div>
+              <div class="centerBtn">
+                <button ion-button small>near By</button>
+              </div>
+          </ion-card-content>
+        </ion-card>
+          <ion-card>
+            <ion-card-content>
+              dsadashdkasdhaskjhdk ashdkjashk
+                <button ion-button small>Default</button>
+                <button ion-button small>Default</button>
+                <button ion-button small>Default</button>
+                <button ion-button small>Default</button>
+                <button ion-button small>Default</button>
+                <button ion-button small>Default</button>
+                <br>
+                i suggestba dkjasbd sadbas dkas udasd asd uas 
+                <br>
+                <button ion-button small>Default</button>
+                <button ion-button small>Default</button>
+                <button ion-button small>Default</button>
+            </ion-card-content>
+          </ion-card>
+      
+    </ion-list>
+  
+    <ion-list *ngSwitchCase="'kittens'">
+        <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+          {{ item.name }}<ion-icon name="ios-arrow-forward" class="iconRight"></ion-icon>
+        </button>  
+    </ion-list>
+  </div>
+</ion-content>

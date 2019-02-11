@@ -1,0 +1,21 @@
+page-dealer-asction {
+    .arrowIcon{
+        position: absolute;
+        right: 35px;
+        color: blue;
+        font-size: 25px;
+    }
+    .cardFooter{
+        color: blue;
+        font-size: 16px;
+    }
+    .outline-CD{
+        border: 1px solid;
+    }
+    .outline-CD:active{
+        background-color: olive;
+    }
+    .outline-CD:focus{
+        background-color: olive;
+    }
+}

@@ -1,0 +1,90 @@
+<!--
+  Generated template for the PlantDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{plant.name}} <ion-icon name="close" class="iconRight" (click) = "closeModal()"></ion-icon></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+        <ion-card-content>
+            <ion-item>
+                <ion-label>Plant</ion-label>
+                <ion-select [(ngModel)]="gaming">
+                  <ion-option  *ngFor="let plant of plants" value="{{plant.name}}">{{plant.name}}</ion-option>
+                </ion-select>
+            </ion-item>
+            <hr class="lineColor">
+            <ion-item>
+              <ion-label>Gaming</ion-label>
+              <ion-select [(ngModel)]="gaming">
+                <ion-option value="nes">NES</ion-option>
+                <ion-option value="n64">Nintendo64</ion-option>
+                <ion-option value="ps">PlayStation</ion-option>
+                <ion-option value="genesis">Sega Genesis</ion-option>
+                <ion-option value="saturn">Sega Saturn</ion-option>
+                <ion-option value="snes">SNES</ion-option>
+              </ion-select>
+          </ion-item>
+          <hr class="lineColor">
+          <ion-item>
+            <ion-label>Gaming</ion-label>
+              <ion-select [(ngModel)]="gaming2">
+                <ion-option value="nes">NES</ion-option>
+                <ion-option value="n64">Nintendo64</ion-option>
+                <ion-option value="ps">PlayStation</ion-option>
+                <ion-option value="genesis">Sega Genesis</ion-option>
+                <ion-option value="saturn">Sega Saturn</ion-option>
+                <ion-option value="snes">SNES</ion-option>
+              </ion-select>
+            </ion-item>
+        </ion-card-content>
+      </ion-card>
+      <ion-card>
+          <ion-card-content >
+            <div class="tableStyle">
+                <table >
+                    <tr>
+                      <th>dsagdasg</th>
+                      <th>dsagdasg</th>
+                      <th>dsagdasg</th>
+                    </tr>
+                    <tr>
+                      <td>das</td>
+                      <td>das</td>
+                      <td>das</td>
+                    </tr>
+                    <tr>
+                      <td>das</td>
+                      <td>das</td>
+                      <td>das</td>
+                    </tr>
+                    <tr>
+                      <td>das</td>
+                      <td>das</td>
+                      <td>das</td>
+                    </tr>
+                    <tr>
+                      <td>das</td>
+                      <td>das</td>
+                      <td>das</td>
+                    </tr>
+                    <tr>
+                      <td>das</td>
+                      <td>das</td>
+                      <td>das</td>
+                    </tr>
+                  </table>
+            </div>
+             
+        </ion-card-content>
+      </ion-card>
+</ion-content>
